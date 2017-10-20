@@ -1,0 +1,204 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown Clock</title>
+    <link type="text/css" href="fastfurious.css" rel="stylesheet">
+    <!-- <link type="text/css" href="../jquery.countdown.css?v=1.0.0" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../jquery.countdown.min.js?v=1.0.0"></script> -->
+</head>
+
+    <!-- <ul id="example">
+        <li><span class="days">00</span><p class="days_text">Days</p></li>
+        <li class="seperator">:</li>
+        <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+        <li class="seperator">:</li>
+        <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+        <li class="seperator">:</li>
+        <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+    </ul>
+
+    <script class="source" type="text/javascript">
+        var now = new Date();
+        var day = now.getDate();
+        var month = now.getMonth();
+        var year = now.getFullYear() + 1;
+
+        var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+
+        $('#example').countdown({
+            date: nextyear, //TODO Date format: 07/27/2017 17:00:00
+            offset: +2,
+            day: 'Day',
+            days: 'Days'
+        }, function () {
+            alert('Done!');
+        });
+    </script>
+
+    <ul id="buttons">
+        <li><a href="http://epiksel.github.io/countdown" class="btn download">Download</a></li>
+        <li><a href="https://github.com/epiksel/countdown" class="btn forkme">Fork Me</a></li>
+    </ul> -->
+<!--    <style type="text/css">
+.times{text-transform:none;font-size:20px;padding-right:30px}
+#times-countdown{background:rgba(255,255,255,0.62);color:white;font-family:Oswald,Arial,Sans-serif;font-size:250%;text-transform:uppercase;text-align:left;font-weight:normal;padding:0 0 30px 0;border-radius:5px}
+#demthoigian-share123{max-width:100%;margin:0 auto;text-align:center}
+span#countdown{margin:10px 10px 20px;border-radius:9px;padding:20px;text-align:center;background-color:rgba(1,49,97,.85);color:white;font-size:170%;font-weight:600;font-family:'Nove Cento'}
+#times-countdown h2{font-size:40px;color:#034688;font-weight:700;text-align:center;padding:6px;margin:18px}
+</style>
+ <div id='times-countdown'>
+  <h2>Cuộc thi ăn FAST&FURIOUS</h2>
+     <div id='demthoigian-share123'>
+   <span id='countdown'/>
+  </div>
+</div>
+<script type='text/javascript'>
+//<![CDATA[
+// đặt ngày để bắt đầu đếm ngược, ở đây là 28-12-2016
+var target_date = new Date("Nove 1, 2017").getTime();
+
+// thêm biến cho các đơn vị thời gian
+var days, hours, minutes, seconds;
+
+//đặt id là countdown
+var countdown = document.getElementById("countdown");
+
+// cập nhật id "countdown" mỗi 1 giây
+setInterval(function () {
+
+    // thiết lập cho ngày giờ hiện tại và ngày kết thúc
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+
+    // tính ngày, giờ, phút và giây
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+    
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+    
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+    
+    // thiết lập cho biến countdown hiển thị ra ngoài
+countdown.innerHTML = days + " <span class=\'times\'>ngày</span> " + hours + " <span class=\'times\'>giờ</span> "
+  + minutes + " <span class=\'times\'>phút</span> " + seconds + " <span class=\'times\'>giây</span>";
+
+}, 1000);
+//]]>
+</script>
+<img src="../bacodekiller.github.io/countdown-master/demo/thian.jpg" alt="loi" align="center">
+</body> -->
+
+<body>
+    <div id="clock">
+        <img src="countdown-master/demo/thian.jpg" alt="" width="12%" align="top" />
+        <br><br>
+        <div class="text" style="font-size: 70px; line-height: 100px;"> 
+            WHO WILL BE THE CHAMPION?
+            
+        </div>
+        <div class="counter_part" id="day_wrapper">
+            <div class="unit_value" id="day" style="font-size: 107px; line-height: 163px;"> 00</div>
+            <div class="unit_name" style="font-size: 39px; line-height: 40px;">DAYS</div>
+        </div>
+
+        <div class="counter_part colon" id="colon_day" style="display: inline-block;">
+            <div class="unit_value" style="font-size: 107px; line-height: 163px;">:</div>
+            <div class="unit_name" style="font-size: 39px; line-height: 40px;">&nbsp;</div>
+        </div>
+
+        <div class="counter_part" id="hour_wrapper">
+            <div class="unit_value" id="hour" style="font-size: 107px; line-height: 163px;"> 00 </div>
+            <div class="unit_name" style="font-size: 39px; line-height: 40px;">HOURS</div>
+        </div>
+
+        <div class="counter_part colon" id="colon_hour" style="display: inline-block;">
+            <div class="unit_value" style="font-size: 107px; line-height: 163px;">:</div>
+            <div class="unit_name" style="font-size: 39px; line-height: 40px;">&nbsp;</div>
+        </div>
+
+        <div class="counter_part" id="minute_wrapper">
+            <div class="unit_value" id="minute" style="font-size: 107px; line-height: 163px;"> 00 </div>
+            <div class="unit_name" style="font-size: 39px; line-height: 40px;">MINUTES</div>
+        </div>
+
+        <div class="counter_part colon" id="colon_minute" style="display: inline-block;">
+            <div class="unit_value" style="font-size: 107px; line-height: 163px;">:</div>
+            <div class="unit_name" style="font-size: 39px; line-height: 40px;">&nbsp;</div>
+        </div>
+
+        <div class="counter_part" id="second_wrapper">
+            <div class="unit_value" id="second" style="font-size: 107px; line-height: 163px;"> 00 </div>
+            <div class="unit_name" style="font-size: 39px; line-height: 40px;">SECONDS</div>
+        </div>
+        <br>
+        <div class="text" style="font-size: 60px; line-height: 163px;"> 
+            <div>#FINALROUND #FAST&FURIOUS</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nove 1, 2017 18:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    //document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    //+ minutes + "m " + seconds + "s ";
+    if (day >=0 && days < 10) {
+        document.getElementById("day").innerHTML = "0" + days;
+    } else {
+        document.getElementById("day").innerHTML = days;
+    }
+    if (hours >=0 && hours < 10) {
+        document.getElementById("hour").innerHTML = "0" + hours;
+    } else {
+        document.getElementById("hour").innerHTML = hours;
+    }
+
+
+    if (minutes >=0 && minutes < 10) {
+        document.getElementById("minute").innerHTML = "0" + minutes;
+    } else {
+        document.getElementById("minute").innerHTML = minutes;
+    }
+
+
+    if (seconds >=0 && seconds < 10) {
+
+
+        document.getElementById("second").innerHTML = "0" + seconds;
+    } else {
+        document.getElementById("second").innerHTML = seconds;
+    }
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("day").innerHTML = "00";
+        document.getElementById("hour").innerHTML = "00";
+        document.getElementById("minute").innerHTML = "00";
+        document.getElementById("second").innerHTML = "00";
+    }
+}, 1000);
+</script>
